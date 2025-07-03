@@ -20,8 +20,8 @@
         }
 
         .sidebar .list-group-item.active {
-            background: #0d6efd;
-            border-color: #0d6efd;
+            background: rgb(245, 189, 6);
+            border-color: rgb(245, 189, 6);
             color: #fff;
         }
 
@@ -37,9 +37,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm mb-4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Aplikasi Produk</a>
+            <a class="navbar-brand text-black" style="margin-left: 1rem;" href="/">Aplikasi Produk</a>
         </div>
     </nav>
     <main>

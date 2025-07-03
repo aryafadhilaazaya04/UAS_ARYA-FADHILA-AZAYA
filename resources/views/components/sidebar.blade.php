@@ -3,7 +3,7 @@
         <i class="bi bi-speedometer2"></i>
         <span>Dashboard</span>
     </a>
-    <a href="{{ route('products') }}" class="list-group-item list-group-item-action d-flex align-items-center gap-2 {{ request()->routeIs('products') ? 'active' : '' }}">
+    <a href="{{ route('products') }}" class="list-group-item list-group-item-action d-flex align-items-center gap-2 {{ request()->routeIs('products*') ? 'active' : '' }}">
         <i class="bi bi-box-seam"></i>
         <span>Produk</span>
     </a>
