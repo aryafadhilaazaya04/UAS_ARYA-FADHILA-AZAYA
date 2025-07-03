@@ -36,7 +36,7 @@ class ProductController extends Controller
             'stock' => 'required|integer|min:0',
         ]);
         Product::create($validated);
-        return redirect()->route('products.index')->with('success', 'Product created successfully!');
+        return redirect()->route('products.index')->with('success', 'Produk berhasil ditambahkan!');
     }
 
     /**
@@ -67,7 +67,7 @@ class ProductController extends Controller
             'stock' => 'required|integer|min:0',
         ]);
         $product->update($validated);
-        return redirect()->route('products.index')->with('success', 'Product updated successfully!');
+        return redirect()->route('products.index')->with('success', 'Produk berhasil diperbarui!');
     }
 
     /**
@@ -76,6 +76,6 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         $product->delete();
-        return redirect()->route('products.index')->with('success', 'Product has been deleted!');
+        return redirect()->route('products.index')->with('success', 'Produk berhasil dihapus!');
     }
 }
