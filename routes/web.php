@@ -6,6 +6,4 @@ Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/products', function () {
-    return view('products');
-})->name('products');
+Route::resource('products', App\Http\Controllers\ProductController::class);
